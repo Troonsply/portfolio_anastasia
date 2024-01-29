@@ -28,11 +28,15 @@ class Email {
                 from: 'esyavris@loylabs.ru',
                 to: reciever,
                 subject: "Portfolio Email",
-                text: message
+                text: message,
+                html:`<p>${message}</p>`
             })
+            return info.messageId;
         } catch(e) {
             return e
         }
 
     }
 }
+
+export default new Email();
