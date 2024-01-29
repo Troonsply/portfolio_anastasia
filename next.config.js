@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/uncolors',
+    images: {
+        unoptimized: true,
+    },
+    output: 'export',
 };
 
 export default nextConfig
