@@ -1,6 +1,6 @@
 module.exports = {
     output: {
-        path: path.resolve(__dirname, 'dist'), // здесь указываем директорию для сборки
+        path: path.resolve(__dirname, 'out'), // Г§Г¤ГҐГ±Гј ГіГЄГ Г§Г»ГўГ ГҐГ¬ Г¤ГЁГ°ГҐГЄГІГ®Г°ГЁГѕ Г¤Г«Гї Г±ГЎГ®Г°ГЄГЁ
         filename: 'bundle.js'
     }
 }
