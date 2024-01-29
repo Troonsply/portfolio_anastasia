@@ -10,7 +10,6 @@
     "start": "next start",
     "lint": "next lint",
     "start-api": "nodemon",
-    "export": "output",
     "predeploy": "npm run build && npm run export",
     "deploy": "gh-pages -d out"
   },
