@@ -10,8 +10,9 @@
     "start": "next start",
     "lint": "next lint",
     "start-api": "nodemon",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out -t true"
+    "export": "output",
+    "predeploy": "npm run build && npm run export",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.14",
