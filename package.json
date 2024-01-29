@@ -12,7 +12,7 @@
     "start-api": "nodemon",
     "export": "output",
     "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.14",
