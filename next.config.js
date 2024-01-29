@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: process.env.BASE_PATH,
+    reactStrictMode: true,
+    basePath: '/uncolors',
 };
 
 module.exports = nextConfig
