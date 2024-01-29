@@ -17,7 +17,7 @@ export default function Home() {
                             src={photo}
                             alt="photo"
                             priority
-                            height={730}
+                            height={740}
                             width={500}
                         />
                     </div>
