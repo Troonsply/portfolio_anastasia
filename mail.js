@@ -22,14 +22,14 @@ class Email {
         })
     }
 
-    async send(reciever,message) {
+    async send(reciever,message,name,mail) {
         try {
             const info = await this.#transporter.sendMail({
-                from: 'test@gmail.com',
+                from: mail,
                 to: reciever,
                 subject: "Portfolio Email",
                 text: message,
-                html:`<p>${message}</p>`
+                html:`<p>${message}</p><br><p>${name}</p><p>${mail}</p>`
             })
             return info.messageId;
         } catch(e) {
