@@ -4,6 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  @media only screen and (max-width: 860px) {
+    padding: 1rem;
+  }
   header {
     margin-bottom: 40px;
     a {
@@ -31,6 +34,9 @@
       animation-duration: 1s;
       animation-delay: 0s;
       width: 100%;
+      @media only screen and (max-width: 860px) {
+        padding: 5vh 9vw;
+      }
       h1 {
         margin-bottom: 0;
         text-align: center;
@@ -39,6 +45,9 @@
         letter-spacing: 0.1em;
         font-weight: 400;
         font-family: 'Montserrat',sans-serif;
+        @media only screen and (max-width: 860px) {
+          font-size: 22px;
+        }
       }
       form {
         font-size: 1.2em;
@@ -55,6 +64,11 @@
         text-transform: none;
         line-height: normal;
         font-family: 'Montserrat',sans-serif;
+        @media only screen and (max-width: 860px) {
+          font-size: 1em;
+          margin-top: 2em;
+          margin-bottom: 2em;
+        }
       }
       &_text {
         width: 100%;
@@ -74,6 +88,9 @@
           box-sizing: border-box;
           font-size: 18px;
           font-weight: 400;
+          @media only screen and (max-width: 860px) {
+            font-size: 12px;
+          }
         }
         label {
           position: absolute;
@@ -115,8 +132,12 @@
           text-align: center;
           color: inherit;
           text-decoration: inherit;
+          @media only screen and (max-width: 860px) {
+            padding: 0.5em 1.2em;
+          }
         }
       }
+
     }
   }
 }

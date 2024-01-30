@@ -2,12 +2,15 @@
   "name": "uncolors",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start-api": "nodemon"
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.14",

@@ -4,8 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
+  @media only screen and (max-width: 860px) {
+    padding: 1rem;
+  }
   header {
     margin-bottom: 40px;
+    @media only screen and (max-width: 860px) {
+      margin-bottom: 20px;
+    }
     a {
       padding: 0.5rem;
 
@@ -23,6 +29,9 @@
     width: 100%;
     &_section {
       padding: 5vh 5vw;
+      @media only screen and (max-width: 860px) {
+        padding: 5vh 1vw;
+      }
       &_head {
         width: 100%;
         display: flex;
@@ -37,11 +46,17 @@
           letter-spacing: 0.1em;
           font-weight: 400;
           font-family: 'Montserrat',sans-serif;
+          @media only screen and (max-width: 860px) {
+            font-size: 22px;
+          }
         }
         p {
           margin-bottom: 1.1em;
           max-width: 1200px;
           text-align: center;
+          @media only screen and (max-width: 860px) {
+            width: 214px;
+          }
         }
       }
       &_gallery {
@@ -49,6 +64,19 @@
         display: grid;
         grid-auto-columns: 1rf;
         row-gap: 50px;
+        @media only screen and (max-width: 860px) {
+          row-gap: 10px;
+        }
+        &_img {
+          height: 700px !important;
+          width:500px !important;
+          object-fit: cover !important;
+          object-position: center;
+          @media only screen and (max-width: 860px) {
+            height: 90% !important;
+            width: 100% !important;
+          }
+        }
       }
     }
   }

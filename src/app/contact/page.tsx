@@ -5,6 +5,7 @@ export default function Page() {
     return (
         <div className={styles.main}>
             <header>
+                <Link href="/">Main</Link>
                 <Link href="/contact">Contact</Link>
                 <Link href="/portfolio">Portfolio</Link>
             </header>

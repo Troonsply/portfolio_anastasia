@@ -17,6 +17,7 @@ export default function Page() {
     return (
         <main className={styles.main}>
             <header>
+                <Link href="/">Main</Link>
                 <Link href="/contact">Contact</Link>
                 <Link href="/portfolio">Portfolio</Link>
             </header>
@@ -29,7 +30,7 @@ export default function Page() {
                             <span><strong>Bust:</strong> 82 </span>
                             <span><strong>Waist:</strong> 60 </span>
                             <span><strong>Hips:</strong> 90 </span>
-                            <span><strong>Dress:</strong> xs-s </span>
+                            <span><strong>Dress:</strong> XS-S </span>
                             <span><strong>Shoe:</strong> 6.5 </span>
                         </p>
                     </div>
@@ -43,7 +44,7 @@ export default function Page() {
                                 height={700}
                                 width={500}
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                style={{objectFit: "cover", objectPosition: "center"}}
+                                className={styles.main_container_section_gallery_img}
                             />
                         ))}
                     </div>
