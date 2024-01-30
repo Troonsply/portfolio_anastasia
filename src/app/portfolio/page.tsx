@@ -11,7 +11,7 @@ export default function Page() {
 
 // Создайте массив объектов, каждый из которых имеет свойство src, которое указывает на файл
     const photos = filenames.map((filename) => ({
-        src: `/photos/${filename}`,
+        src: `./photos/${filename}`,
     }));
 
     return (
