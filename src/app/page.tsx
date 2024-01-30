@@ -19,6 +19,7 @@ export default function Home() {
                             priority
                             height={740}
                             width={500}
+                            className={styles.main__container_image_img}
                         />
                     </div>
                     <div className={styles.main__container_text}>

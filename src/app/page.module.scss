@@ -4,7 +4,10 @@
   align-items: center;
   padding: 2rem;
   min-height: 100vh;
-
+  @media only screen and (max-width: 860px) {
+    min-height: 100%;
+    padding: 1rem;
+  }
   header {
     margin-bottom: 40px;
     a {
@@ -24,8 +27,20 @@
     justify-items: center;
     align-items: center;
     width: 80%;
+    @media only screen and (max-width: 860px) {
+      grid-template-columns: 1fr;
+    }
     &_image {
       width: 100%;
+      &_img {
+        height: 740px !important;
+        width:500px !important;
+        object-fit: cover !important;
+        @media only screen and (max-width: 860px) {
+          height: 80% !important;
+          width: 100% !important;
+        }
+      }
     }
     &_text {
       display: flex;
@@ -38,10 +53,17 @@
         letter-spacing: 0.1em;
         text-align: center;
         margin-bottom: 0.3em;
+        @media only screen and (max-width: 860px) {
+          margin-top: 0.3em;
+          font-size: 22px;
+        }
       }
       p {
         margin-bottom: 0.7em;
         font-size: 19px;
+        @media only screen and (max-width: 860px) {
+          font-size: 14px;
+        }
       }
     }
   }
