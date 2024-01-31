@@ -62,8 +62,9 @@
       &_gallery {
         margin-top: 3em;
         display: grid;
-        grid-auto-columns: 1rf;
+        grid-auto-columns: 1fr;
         row-gap: 50px;
+        justify-items: center;
         @media only screen and (max-width: 860px) {
           row-gap: 10px;
         }

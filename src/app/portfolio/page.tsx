@@ -30,8 +30,10 @@ export default function Page() {
                             <span><strong>Bust:</strong> 82 </span>
                             <span><strong>Waist:</strong> 60 </span>
                             <span><strong>Hips:</strong> 90 </span>
+                            <span><strong>Hair:</strong> light brown </span>
+                            <span><strong>Eyes:</strong> gray-blue </span>
                             <span><strong>Dress:</strong> XS-S </span>
-                            <span><strong>Shoe:</strong> 6.5 </span>
+                            <span><strong>Shoe:</strong> 6.5 US</span>
                         </p>
                     </div>
                     <div className={styles.main_container_section_gallery}>
