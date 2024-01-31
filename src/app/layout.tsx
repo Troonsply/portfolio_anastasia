@@ -2,7 +2,6 @@ import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 import "./globals.scss";
 import Head from "next/head";
-import ReactGA from 'react-ga';
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -16,8 +15,7 @@ export default function RootLayout({
                                    }: Readonly<{
     children: React.ReactNode;
 }>) {
-    ReactGA.initialize('UA-000000-01'); // Заменитена ваш Tracking ID из Google Analytics
-    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
         <html lang="en">
         <Head>
