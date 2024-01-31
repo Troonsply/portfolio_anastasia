@@ -53,9 +53,26 @@
         letter-spacing: 0.1em;
         text-align: center;
         margin-bottom: 0.3em;
+        font-weight: 400;
+        animation-name: load;
+        animation-duration: 2s;
         @media only screen and (max-width: 860px) {
           margin-top: 0.3em;
           font-size: 22px;
+        }
+      }
+      @keyframes load {
+        0% {
+          /* Начинаем с масштаба 0 (совсем маленького) */
+          transform: scale(0);
+        }
+        50% {
+          /* В середине анимации увеличиваем масштаб до 1.5 (немного больше, чем нормальный размер) */
+          transform: scale(1.5);
+        }
+        100% {
+          /* В конце анимации возвращаемся к нормальному размеру */
+          transform: scale(1);
         }
       }
       p {
